@@ -31,7 +31,7 @@ build*/*
 # Top-level generic files
 #
 !.gitignore
-
+!.github
 
 #
 # Git stuff
