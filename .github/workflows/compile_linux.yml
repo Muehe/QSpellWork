@@ -14,7 +14,13 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update -yq &&
-        sudo apt-get install -y g++ build-essential qt6-base-dev qt6-webengine-dev qt6-declarative-dev
+        sudo apt-get install -y g++ \
+                                build-essential \
+                                libglu1-mesa-dev \
+                                mesa-common-dev \
+                                qt6-base-dev \
+                                qt6-webengine-dev \
+                                qt6-declarative-dev
     - name: qmake
       run: |
         mkdir build &&

@@ -23,7 +23,7 @@ SOURCES += \
     MainForm.cpp \
     ScriptEdit.cpp \
     SettingsForm.cpp \
-    blp/blp.cpp \
+    blp/BLP.cpp \
     dbc/DBC.cpp \
     mpq/MPQ.cpp \
     wov/bone.cpp \
