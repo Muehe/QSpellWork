@@ -123,8 +123,6 @@ win32: {
         BUILDTYPE = "Release"
     }
 
-    LIBS += -L$$PWD/mpq/StormLib/$$PLATFORM/$$BUILDTYPE/ -lStormLib
-    LIBS += -L$$PWD/blp/squish/$$PLATFORM/$$BUILDTYPE/ -lsquish
     DLLDESTDIR = ../QSW/bin/$$PLATFORM/$$BUILDTYPE/
     DESTDIR = $$DLLDESTDIR
 
@@ -132,3 +130,6 @@ win32: {
 
     QMAKE_POST_LINK += windeployqt --no-system-d3d-compiler --no-opengl-sw --no-svg --no-qmltooling $${DESTDIR}$${TARGET}.exe
 }
+
+LIBS += -L$$PWD/mpq/StormLib/$$PLATFORM/$$BUILDTYPE/ -lStormLib
+LIBS += -L$$PWD/blp/squish/$$PLATFORM/$$BUILDTYPE/ -lsquish
